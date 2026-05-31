@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Umur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Cek Umur Anda</h1>
+        <form id="ageForm">
+            <label for="day">Tanggal:</label>
+            <select id="day" required>
+                <option value="">Pilih Tanggal</option>
+                <!-- Opsi tanggal akan diisi oleh JavaScript -->
+            </select>
+
+            <label for="month">Bulan:</label>
+            <select id="month" required>
+                <option value="">Pilih Bulan</option>
+                <!-- Opsi bulan akan diisi oleh JavaScript -->
+            </select>
+
+            <label for="year">Tahun:</label>
+            <select id="year" required>
+                <option value="">Pilih Tahun</option>
+                <!-- Opsi tahun akan diisi oleh JavaScript -->
+            </select>
+
+            <button type="submit">Cek Umur</button>
+        </form>
+    </div>
+
+    <div class="card" id="reviewCard" style="display: none;">
+        <h2>Review Input</h2>
+        <p>Tanggal Lahir: <span id="reviewDate"></span></p>
+        <button id="confirmBtn">Konfirmasi</button>
+        <button id="editBtn">Edit</button>
+    </div>
+
+    <div class="card" id="resultCard" style="display: none;">
+        <h2>Hasil</h2>
+        <p>Umur Anda: <span id="ageResult"></span></p>
+        <p>Total Hari: <span id="daysResult"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
